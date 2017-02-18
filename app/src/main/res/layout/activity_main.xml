@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pinksparkle"
+    android:orientation="vertical"
+    tools:context="com.example.ctadmin.pointcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/pinksparkle"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/teamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="@string/ta"
+                android:textAllCaps="true"
+                android:textColor="#000d0b"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="cursive"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textColor="#1c6307"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/team_a_one_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#fd0095ff"
+                android:onClick="teamAOneScore"
+
+                android:text="@string/one"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/team_a_two_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fd0095ff"
+                android:onClick="teamATwoScore"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/two"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/team_a_three_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fd0095ff"
+                android:onClick="teamAThreeScore"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/three"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/pinksparkle"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:text="@string/tb"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="cursive"
+                android:text="@string/zero"
+                android:textAllCaps="true"
+                android:textColor="#1c6307"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/team_b_one_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#fd7012ce"
+                android:onClick="teamBOneScore"
+                android:text="@string/one"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/team_b_two_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fd7012ce"
+                android:onClick="teamBTwoScore"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/two"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/team_b_three_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fd7012ce"
+                android:onClick="teamBThreeScore"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/three"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#d90c7d"
+            android:onClick="resetButton"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/res"
+            android:textColor="#fff047"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
